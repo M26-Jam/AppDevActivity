@@ -10,14 +10,14 @@ export class Tab3Page {
   contactlist  = [
     {id: 1, name: 'Jamelle Cleofe Cuna', email: 'jamellecleofe.cuna@evsu.edu.ph',number: '09123456789'},
     {id: 1, name: 'Zyra Cruz', email: 'zyra0908@gmail.com',number: '09631852032'},
-    {id: 1, name: 'Tatum Kulit', email: 'tatum34@gmail.com',number: '09062026630'},
+    {id: 1, name: 'Tatum Kulit', email: 'tatum34@gmail.com',number: '090621S26630'},
   ]
 
   constructor(public alertController: AlertController, public toastController: ToastController ) {
   }
   async  confirmation(index: number) {
     const alert = await this.alertController.create({
-      header: 'Are You Sure You Want To Delete?',
+      header: 'Are You Sure You Want To Delete??',
       buttons: [
         {
           text: 'Yes',
@@ -47,10 +47,10 @@ export class Tab3Page {
       
       inputs: [
         {
-          name: 'name',
+          name: 'Name',
           placeholder: 'Name',
         },{
-          name: 'email',
+          name: 'Email',
           placeholder: '@gmail  (optional)',
         },
         {
