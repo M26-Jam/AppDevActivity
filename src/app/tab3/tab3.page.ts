@@ -94,11 +94,11 @@ export class Tab3Page {
                 email: data.email,
                 number: data.number
               });
-              this.showErrorToast('<ion-text color="danger"><b>Added</b></ion-text>');
+              this.showErrorToast('<ion-text color="danger"><b> Successfully Added</b></ion-text>');
             }
             }
             else{
-              this.showErrorToast('<ion-text color="danger"><b>Pls fill in the blanks</b></ion-text>');
+              this.showErrorToast('<ion-text color="danger"><b>Fill in the blanks</b></ion-text>');
               return false;
             }
           
