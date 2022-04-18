@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { AlertController, ToastController } from '@ionic/angular';
+import { Router } from '@angular/router';
+
+
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
@@ -13,7 +16,7 @@ export class Tab3Page {
     {id: 1, name: 'Tatum Kulit', email: 'tatum34@gmail.com',number: '090621S26630'},
   ]
 
-  constructor(public alertController: AlertController, public toastController: ToastController ) {
+  constructor(public alertController: AlertController, public toastController: ToastController, private route: Router ) {
   }
   async  confirmation(index: number) {
     const alert = await this.alertController.create({
@@ -121,6 +124,8 @@ export class Tab3Page {
 
     (await toast).present();
   }
-
+  async sendMessage(){ 
+    this.route.navigate(['message']);
+  }
 
 }
